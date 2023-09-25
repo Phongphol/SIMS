@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        form {
+            width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form input[type="submit"], form input[type="reset"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form input[type="submit"]:hover, form input[type="reset"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="insert_std.php">
+        <h2>เพิ่มข้อมูลนักศึกษา</h2>
+        <label for="id">ID:</label>
+        <input type="text" name="id" required><br>
+
+        <label for="en_name">Name (English):</label>
+        <input type="text" name="en_name" required><br>
+
+        <label for="en_surname">Surname (English):</label>
+        <input type="text" name="en_surname" required><br>
+
+        <label for="th_name">ชื่อ (ไทย):</label>
+        <input type="text" name="th_name" required><br>
+
+        <label for="th_surname">นามสกุล (ไทย):</label>
+        <input type="text" name="th_surname" required><br>
+
+        <label for="major_code">Major:</label>
+        <input type="text" name="major_code" required><br>
+
+        <label for="email">Email:</label>
+        <input type="text" name="email" required><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
